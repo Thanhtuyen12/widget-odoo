@@ -1,0 +1,140 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#2A7E7E;">HR Department Organization Chart</h2>
+        <h3 class="oe_slogan">Interactive organizational chart for Odoo departments</h3>
+        <div class="oe_span12">
+            <p class="oe_mt32">
+                <strong>HR Department Organization Chart</strong> adds a dedicated
+                <em>Organization Chart</em> tab to every department form in Odoo.
+                It renders the full hierarchy around the department you are
+                looking at: the chain of parent departments above, the current
+                department highlighted in the middle, and the collapsible tree of
+                sub-departments below.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h3 class="oe_slogan" style="color:white;">Key Features</h3>
+            <ul class="oe_slogan" style="color:white;">
+                <li>Two-way hierarchy: ancestors above, descendants below</li>
+                <li>Expand / collapse each branch with a single button</li>
+                <li>Automatic collapse of sibling branches for readability</li>
+                <li>Colour coding by hierarchical level</li>
+                <li>Employee count and department manager on every box</li>
+                <li>SVG connectors, recomputed on resize and on expand</li>
+                <li>Single database request, no configuration required</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <div class="oe_span12 text-center" style="margin-top: 20px;">
+                <div class="oe_demo oe_picture oe_screenshot">
+                    <img src="screenshots/screenshot_chart.png" alt="HR Department Organization Chart screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2A7E7E;">How to use</h3>
+            <ol class="oe_slogan">
+                <li>Go to <em>Employees &rarr; Configuration &rarr; Departments</em>.</li>
+                <li>Open a department in form view.</li>
+                <li>Switch to the <strong>Organization Chart</strong> tab.</li>
+                <li>Click the round <strong>+</strong> button at the bottom of a box to
+                    reveal its direct sub-departments, and <strong>-</strong> to
+                    collapse the branch again.</li>
+            </ol>
+            <p class="oe_mt32">
+                Opening a new branch automatically collapses the branch that was
+                previously open at the same level, so the chart always stays
+                compact and readable. The background colour of each box depends
+                on its depth in the hierarchy.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:white;">Screenshots</h3>
+            <div class="oe_row oe_spaced">
+                <div class="oe_span6">
+                    <div class="oe_demo oe_picture oe_screenshot">
+                        <img src="screenshots/screenshot_collapsed.png" alt="Collapsed branch in the organization chart">
+                    </div>
+                    <p class="oe_slogan" style="color:white;">
+                        A single branch expanded, ready to be collapsed again.
+                    </p>
+                </div>
+                <div class="oe_span6">
+                    <div class="oe_demo oe_picture oe_screenshot">
+                        <img src="screenshots/screenshot_deep.png" alt="Deep hierarchy in the organization chart">
+                    </div>
+                    <p class="oe_slogan" style="color:white;">
+                        Several hierarchy levels, with ancestors stacked above.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2A7E7E;">Installation</h3>
+            <p class="oe_slogan">
+                The module only depends on the standard <code>hr</code> application
+                of Odoo 16.
+            </p>
+            <p class="oe_slogan">
+                From the UI: activate the developer mode, then go to
+                <em>Apps</em> and install <strong>HR Department Organization Chart</strong>.
+            </p>
+            <p class="oe_slogan">
+                From the command line:<br>
+                <code>odoo -d &lt;your_database&gt; -i hr_department_org_chart --stop-after-init</code>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2A7E7E;">Reusing the widget</h3>
+            <p class="oe_slogan">
+                The chart is registered as an Odoo field widget named
+                <code>hr_department_org_chart</code>, so you can display it on any
+                <code>hr.department</code> relation:
+            </p>
+            <pre class="oe_slogan">field name="child_ids" widget="hr_department_org_chart" readonly="1" nolabel="1"</pre>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:white;">Credits</h3>
+            <p class="oe_slogan" style="color:white;">
+                <strong>Author:</strong> Tuyen Fung<br>
+                <strong>License:</strong> LGPL-3<br>
+                <strong>Price:</strong> 22.75 EUR<br>
+                <strong>Supported versions:</strong> Odoo 16.0<br>
+                <strong>Source code:</strong>
+                <a href="https://github.com/Thanhtuyen12/hr_department_org_chart" style="color:white;">
+                    github.com/Thanhtuyen12/hr_department_org_chart
+                </a>
+            </p>
+        </div>
+    </div>
+</section>

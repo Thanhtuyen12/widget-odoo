@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+*.swp
+*.bak
+__pycache__/
+.pytest_cache/
+.idea/
+.vscode/
+node_modules/
+*.log
+dist/

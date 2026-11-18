@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--
+            Add an "Organization Chart" tab to the department form.
+
+            The anchor //group[@col='4'] is used on purpose (instead of //sheet)
+            so that this view still applies when another module has replaced the
+            whole <sheet> of the hr.department form.
+        -->
+        <record id="view_department_form_inherit_org_chart" model="ir.ui.view">
+            <field name="name">hr.department.form.inherit.org.chart</field>
+            <field name="model">hr.department</field>
+            <field name="inherit_id" ref="hr.view_department_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@col='4']" position="after">
+                    <notebook>
+                        <page string="Organization Chart" name="hr_department_org_chart">
+                            <field name="child_ids"
+                                   widget="hr_department_org_chart"
+                                   readonly="1"
+                                   nolabel="1"
+                                   options="{'no_open': True}"/>
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
