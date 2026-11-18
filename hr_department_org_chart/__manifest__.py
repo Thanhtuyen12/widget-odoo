@@ -13,11 +13,12 @@
     "currency": "EUR",
     "depends": ["hr"],
     "data": ["views/hr_department_views.xml"],
-    "images": [
-        "images/main_screenshot.png",
-        "images/main_1.png",
-        "images/main_2.png",
-    ],
+    # Add the "images" key once the real screenshots are ready:
+    #   "images": [
+    #       "images/main_screenshot.png",
+    #       "images/main_1.png",
+    #       "images/main_2.png",
+    #   ],
     "assets": {
         "web.assets_backend": [
             "hr_department_org_chart/static/src/js/hr_department_org_chart.js",
