@@ -1,28 +1,21 @@
 HR Department Organization Chart
 ================================
 
-Interactive organizational chart for Odoo departments.
+Interactive organizational chart for Odoo 16 departments.
 
-The module adds a dedicated **Organization Chart** tab to every department
-form.  It renders the whole hierarchy around the department you are looking at:
-
-* the chain of **parent departments** above the current one,
-* the current department highlighted in the middle,
-* the **tree of sub-departments** below, collapsible level by level.
-
-Each department box shows the department name, the number of employees and the
-name of its manager.  Connectors are drawn with SVG and are automatically
-recomputed when the chart is expanded, collapsed or the window is resized.
+The module adds an **Organization Chart** tab to every ``hr.department`` form.
+It shows the chain of parent departments above, the department you are looking
+at in the middle, and the collapsible tree of its sub-departments below.  Each
+box displays the department name, its headcount and its manager.
 
 **Key features**
 
-* Two-way hierarchy view: ancestors above, descendants below.
-* Expand / collapse each branch with a single ``+`` / ``-`` button.
-* Opening a branch automatically collapses the other branches of the same level
-  to keep the chart readable.
-* Colour coding by hierarchical level to make the depth easy to read.
-* Fully generic: only relies on the standard ``hr.department`` fields
-  (``name``, ``manager_id``, ``parent_id``, ``child_ids``, ``total_employee``).
+* Two-way hierarchy: ancestors above, descendants below.
+* Expand and collapse any branch with a single click.
+* Opening a branch folds away its siblings at the same level.
+* Headcount and manager on every box.
+* Live SVG connectors, recomputed on expand, collapse and resize.
+* The whole subtree is fetched in a single request.
 * No configuration required.
 
 **Supported versions**

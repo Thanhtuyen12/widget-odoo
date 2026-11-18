@@ -1,14 +1,14 @@
 Installation
 ============
 
-The module only depends on the standard ``hr`` application of Odoo 16, so no
-extra dependency has to be installed.
+The module depends on the standard ``hr`` application of Odoo 16 and on nothing
+else.
 
 From the Odoo UI
 ----------------
 
 #. Go to *Apps*.
-#. Activate the developer mode ( *Settings -> General -> Developer Mode* ).
+#. Enable developer mode ( *Settings -> General -> Developer Mode* ).
 #. Search for ``HR Department Organization Chart`` and click *Install*.
 
 From the command line
@@ -26,5 +26,5 @@ Updating
     odoo -d <your_database> -u hr_department_org_chart --stop-after-init
 
 .. note::
-   Remember to regenerate the web assets after an update
+   Regenerate the web assets after an update
    (*Apps -> Update Apps List*, then *Upgrade* on the module).

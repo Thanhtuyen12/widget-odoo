@@ -1,11 +1,8 @@
 Usage
 =====
 
-The chart is available on every department.
-
-#. Go to *Employees -> Configuration -> Departments*.
-#. Open a department in form view.
-#. Switch to the **Organization Chart** tab.
+*Employees -> Configuration -> Departments*, open a department, switch to the
+**Organization Chart** tab.
 
 Reading the chart
 -----------------
@@ -15,31 +12,24 @@ Reading the chart
 * The **current department** is the highlighted box in the middle.
 * The **sub-departments** are displayed underneath, one row per level.
 
-Every box displays:
-
-* the name of the department,
-* the number of employees belonging to it,
-* the name of its manager.
-
-The background colour of the boxes depends on the depth in the hierarchy, so
-you can immediately tell which level a department belongs to.
+Every box displays the department name, its headcount and its manager.  Box
+backgrounds rotate through six pastel shades by depth, so the level of a
+department is obvious at a glance.
 
 Expanding and collapsing
 ------------------------
 
 * Click the round **+** button at the bottom of a box to reveal its direct
   sub-departments.
-* Click the **-** button to collapse the branch again.
+* Click the **-** button to fold the branch back up.
 
-Only one branch per level can stay open: opening a new branch automatically
-collapses the branch that was previously open at the same level.  This keeps
-the chart compact and readable.
-
-The chart is redrawn automatically when the browser window is resized.
+Only one branch per level stays open: opening a new branch folds away the
+others at that level.  The connectors are redrawn automatically whenever a
+branch is toggled or the browser window is resized.
 
 Known limitation
 ----------------
 
-The number of employees is read from the ``total_employee`` field of the
-department, which only counts the employees directly attached to it (not the
-employees of its sub-departments).
+The headcount comes from ``hr.department.total_employee``, which counts the
+employees directly assigned to the department.  Employees belonging to
+sub-departments are not rolled up into the parent figure.
