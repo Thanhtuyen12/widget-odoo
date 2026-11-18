@@ -8,7 +8,7 @@
     "license": "LGPL-3",
     "author": "Tuyen Fung",
     "maintainers": ["Thanhtuyen12"],
-    "website": "https://github.com/Thanhtuyen12/hr_department_org_chart",
+    "website": "https://github.com/Thanhtuyen12/widget-odoo",
     "price": 22.75,
     "currency": "EUR",
     "depends": ["hr"],

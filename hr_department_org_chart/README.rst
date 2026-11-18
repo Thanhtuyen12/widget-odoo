@@ -153,7 +153,7 @@ Bug Tracker
 ===========
 
 Bugs are tracked on `GitHub Issues
-<https://github.com/Thanhtuyen12/hr_department_org_chart/issues>`_.
+<https://github.com/Thanhtuyen12/widget-odoo/issues>`_.
 
 Development
 ===========

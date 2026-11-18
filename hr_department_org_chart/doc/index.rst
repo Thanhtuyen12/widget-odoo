@@ -25,7 +25,7 @@ Odoo 16.0.
 * Author: Tuyen Fung
 * License: LGPL-3
 * Price: 22.75 EUR
-* Source code: https://github.com/Thanhtuyen12/hr_department_org_chart
+* Source code: https://github.com/Thanhtuyen12/widget-odoo
 
 Installation
 ============
